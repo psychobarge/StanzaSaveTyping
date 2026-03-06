@@ -1,27 +1,28 @@
 {
     "name": "stanza-save-typing",
     "displayName": "StanzaSaveTyping",
-    "description": "Reduces typing effort by providing smart completions and snippets.",
-    "version": "0.0.1",
+    "description": "Automatically save the file after a delay.",
+    "version": "0.1.0",
     "publisher": "Psychobarge",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/psychobarge/StanzaSaveTyping"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.74.0"
     },
     "categories": [
-        "Other"
+        "Data Science",
+        "Visualization"
     ],
     "activationEvents": [
         "onStartupFinished"
     ],
     "contributes": {
         "configuration": {
-            "title": "Stanza Save Typing",
+            "title": "StanzaSaveTyping",
             "properties": {
-                "stanzaSaveTyping.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Enable or disable automatic saving after typing."
-                },
                 "stanzaSaveTyping.delay": {
                     "type": "number",
                     "default": 750,

@@ -3,7 +3,7 @@ import { AutoSaveService, ITextDocument } from './AutoSaveService';
 
 describe('AutoSaveService', () => {
     let service: AutoSaveService;
-    let saveCallback: any;
+    let saveCallback: (doc: ITextDocument) => Promise<boolean>;
 
     beforeEach(() => {
         vi.useFakeTimers();
