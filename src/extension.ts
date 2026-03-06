@@ -17,10 +17,9 @@ export function activate(context: vscode.ExtensionContext) {
 
     const onDidChange = vscode.workspace.onDidChangeTextDocument((event) => {
         const config = vscode.workspace.getConfiguration('stanzaSaveTyping');
-        const enabled = config.get<boolean>('enabled', true);
         const delay = config.get<number>('delay', 750);
 
-        if (enabled && event.document.uri.scheme === 'file') {
+        if (event.document.uri.scheme === 'file') {
             autoSaveService.handleDocumentChange(event.document, delay);
         }
     });
