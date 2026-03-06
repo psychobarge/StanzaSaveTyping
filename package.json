@@ -1,0 +1,50 @@
+{
+    "name": "stanza-save-typing",
+    "displayName": "StanzaSaveTyping",
+    "description": "Reduces typing effort by providing smart completions and snippets.",
+    "version": "0.0.1",
+    "publisher": "Psychobarge",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "contributes": {
+        "configuration": {
+            "title": "Stanza Save Typing",
+            "properties": {
+                "stanzaSaveTyping.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable or disable automatic saving after typing."
+                },
+                "stanzaSaveTyping.delay": {
+                    "type": "number",
+                    "default": 750,
+                    "description": "The delay in milliseconds after the last keystroke before saving the file."
+                }
+            }
+        }
+    },
+    "main": "./out/extension.js",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint src",
+        "test": "vitest run"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/node": "^20.0.0",
+        "@types/vscode": "^1.74.0",
+        "eslint": "^10.0.2",
+        "typescript": "^5.3.0",
+        "typescript-eslint": "^8.56.1",
+        "vitest": "^4.0.18"
+    }
+}

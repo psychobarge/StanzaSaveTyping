@@ -1,0 +1,13 @@
+.vscode/**
+.vscodeignore
+src/**
+tsconfig.json
+eslint.config.mjs
+vitest.config.ts
+package-lock.json
+.cursor/**
+ .github/**
+ CHANGELOG.md
+ README.md
+ LICENSE
+ tests/**
