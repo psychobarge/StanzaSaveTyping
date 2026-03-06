@@ -69,7 +69,6 @@ npm run compile   # or npm run watch for watch mode
 
 # Run tests
 npm test          # or npm run test:watch for watch mode
-npm run test:coverage # for coverage report
 ```
 
 To test the extension visually, press **F5** in VS Code / Cursor to launch the Extension Development Host.

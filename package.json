@@ -2,7 +2,7 @@
     "name": "stanza-save-typing",
     "displayName": "StanzaSaveTyping",
     "description": "Automatically save the file after a delay.",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "Psychobarge",
     "repository": {
         "type": "git",
@@ -41,8 +41,7 @@
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "lint": "eslint src",
-        "test": "vitest run"
+        "lint": "eslint src"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
