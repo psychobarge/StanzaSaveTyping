@@ -8,6 +8,10 @@
 
 VS Code / Cursor extension that automatically saves your files after a specified delay when you stop typing. This improves your workflow by keeping your files up to date seamlessly without manual saves, and helps prevent data loss.
 
+## Disclaimer
+
+This extension was developed with the assistance of an AI coding tool. That said, it was **not** vibe-coded — every feature, design decision, and line of code was deliberately thought through and reviewed by a human developer.
+
 ## Features
 
 - **Automatic Saving** — Saves the active document automatically after you finish typing.
