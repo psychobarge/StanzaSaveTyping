@@ -28,54 +28,13 @@ Any IDE based on VS Code:
 
 ## Installation
 
-### From the marketplace
-
-1. Open VS Code or Cursor.
-2. Go to **Extensions** (Ctrl+Shift+X / Cmd+Shift+X).
-3. Search for **StanzaSaveTyping**.
-4. Click **Install**.
-
-### Via VSIX if you cannot see the extension
-
-If the extension does not appear in the marketplace, install it from a VSIX file:
-
-1. **Generate the VSIX** (from the project root):
-   ```bash
-   npm install
-   npm run compile
-   npx vsce package
-   ```
-   This creates a file like `stanza-save-typing-0.0.1.vsix`.
-
-2. **Install the VSIX** :
-   - Open the Command Palette (Ctrl+Shift+P / Cmd+Shift+P).
-   - Run **Extensions: Install from VSIX...**.
-   - Select the generated `.vsix` file.
+This extension is available on the VS Code Marketplace and Open VSX Marketplace.
 
 ## Configuration
 
 | Setting                          | Type     | Default | Description                                                                 |
 |----------------------------------|----------|---------|-----------------------------------------------------------------------------|
 | `stanzaSaveTyping.delay`          | number   | `750`   | The delay in milliseconds after the last keystroke before saving the file.  |
-
-## Development
-
-```bash
-# Clone the repository
-git clone https://github.com/psychobarge/StanzaSaveTyping.git
-cd StanzaSaveTyping
-
-# Install dependencies
-npm install
-
-# Compile
-npm run compile   # or npm run watch for watch mode
-
-# Run tests
-npm test          # or npm run test:watch for watch mode
-```
-
-To test the extension visually, press **F5** in VS Code / Cursor to launch the Extension Development Host.
 
 ## License
 
