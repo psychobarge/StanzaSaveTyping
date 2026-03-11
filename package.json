@@ -2,7 +2,7 @@
     "name": "stanza-save-typing",
     "displayName": "StanzaSaveTyping",
     "description": "Automatically save the file after a delay.",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "publisher": "Psychobarge",
     "repository": {
         "type": "git",
